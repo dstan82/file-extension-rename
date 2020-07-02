@@ -4,7 +4,7 @@ import os
 
 def confirm_path():
     while True:
-        path = '/home/storm/test1' # path = input('Please select the main folder PATH:')
+        path = input('Please select the main folder PATH:')
         if os.name == 'nt':
             os.system('tree /f '+path)
         else:
